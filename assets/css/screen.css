@@ -1,0 +1,258 @@
+/*===============================common styles==============================*/
+body {
+    font-family: 'Montserrat', 'Geneva', sans-serif;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+button,
+button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+a:active {
+    color: #2b7de0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*===============================some-module==============================*/
+
+
+
+
+
+/*------------------------------card-block--------------------------------------*/
+.card {
+    display: flex;
+    background-color: white;
+    border: 1px solid #f5f6f9;
+}
+
+/*------------------------------picture-block-----------------------------------*/
+.picture {
+    left: 0;
+    top: 0;
+    width: 116px;
+    height: 115px;
+    flex: none;
+    margin: 26px 27px 40px 25px;
+}
+
+.picture__tags-container {
+    position: absolute;
+    z-index: 146;
+}
+
+.picture__tags-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+/*---------------------------tag-block--------------------------------*/
+
+.tag {
+    box-sizing: border-box;
+    font-size: 9px;
+    line-height: 15px;
+    border-radius: 2px;
+    height: 19px;
+    margin: 0 2px 2px 0;
+    padding: 2px 7px 4px 6px;
+}
+
+.tag_green,
+.tag_purple,
+.tag_red {
+    color: white;
+}
+
+.tag_yellow {
+    color: black;
+}
+
+.tag_green {
+    width: 55px;
+    background-color: #62c34b;
+}
+
+.tag_purple {
+    width: 75px;
+    background-color: #7558cd;
+}
+
+.tag_yellow {
+    width: 42px;
+    background-color: #f7d33b;
+}
+
+.tag_red {
+    width: 30px;
+    background-color: #e74650;
+}
+
+/*-----------------------------info-block------------------------------------*/
+.info {
+    margin: 29px 63px 28px 26px;
+    width: 326px;
+    height: 168px;
+}
+
+.info__name,
+.info__performance_block_dash,
+.info__performance_block_right {
+    color: #333333;
+}
+
+.info__name {
+    font-size: 12px;
+}
+
+.info > div {
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.info__description {
+    margin: 16px 0 22px 0;
+}
+
+.info__description,
+.info__performance_block_left {
+    color: #777777;
+}
+
+.info__performance_block_dash {
+    margin: 0 5px;
+}
+
+/*---------------------------------options-block----------------------------*/
+.options {
+    margin: 26px 26px 26px 63px;
+}
+
+.options__in-stock,
+.options__price {
+    line-height: 15px;
+}
+
+.options__in-stock {
+    font-size: 8px;
+    margin: 0 15px 0 0;
+    text-transform: uppercase;
+}
+
+.expected {
+    color: #f28c29;
+}
+
+.available {
+    color: #5fa800;
+}
+
+.options__price {
+    font-size: 13px;
+    color: #333333;
+    margin: 15px 0 0 0;
+}
+
+.options__old-price {
+    font-size: 10px;
+    line-height: 15px;
+    color: #777777;
+    text-decoration: line-through;
+    margin: 8px 0 0 0;
+}
+
+.options__quantity {
+    background-color: #f8f9fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 26px;
+    width: 139px;
+    border-radius: 2px;
+    border: 1px solid #f0f0f1;
+    font-size: 9px;
+    line-height: 15px;
+    margin: 15px 0 0 0;
+}
+
+.options__quantity_sign {
+    stroke: #777777;
+}
+
+.options__quantity_sign_active {
+    stroke: #2b7de0;
+}
+
+.options__quantity_changer,
+.options__quantity_changer:focus {
+    border: none;
+    background-color: inherit;
+}
+
+.options__buy-button {
+    background-color: #4289e0;
+    color: white;
+    outline: none;
+    border: none;
+    width: 139px;
+    height: 26px;
+    font-size: 9px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin: 2px 0 11px 0;
+}
+
+.options__buy-button_active {
+    background-color: #2b7de0;
+}
+
+.options__product-feature {
+    display: flex;
+    align-items: center;
+    color: #777777;
+    font-size: 9px;
+    line-height: 15px;
+}
+
+.options__product-feature_logo {
+    margin-right: 4px;
+}
+
+
+
+
+
+
+
+
+/*------------------------------next-block-----------------------------------*/
+
+/*===============================some-module==============================*/
+/*------------------------------some-block-----------------------------------*/
+/*------------------------------next-block-----------------------------------*/
