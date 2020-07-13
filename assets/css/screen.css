@@ -227,10 +227,11 @@ img {
     border: none;
     width: 139px;
     height: 26px;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 15px;
     text-transform: uppercase;
     margin: 1px 0 11px 0;
+    box-sizing: border-box;
 }
 
 .options__buy-button_active {
@@ -239,7 +240,7 @@ img {
 
 .options__product-feature {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     color: #777777;
     font-size: 9px;
     line-height: 15px;
