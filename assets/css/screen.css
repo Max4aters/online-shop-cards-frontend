@@ -49,7 +49,6 @@ img {
 .card {
     display: flex;
     background-color: white;
-    border: 1px solid #f5f6f9;
 }
 
 /*------------------------------picture-block-----------------------------------*/
@@ -59,12 +58,13 @@ img {
     width: 116px;
     height: 115px;
     flex: none;
-    margin: 26px 27px 40px 25px;
+    margin: 26px 0 40px 26px;
 }
 
 .picture__tags-container {
     position: absolute;
     z-index: 146;
+    margin: -1px 0 0 0;
 }
 
 .picture__tags-footer {
@@ -116,7 +116,7 @@ img {
 
 /*-----------------------------info-block------------------------------------*/
 .info {
-    margin: 29px 63px 28px 26px;
+    margin: 23px 63px -11px 26px;
     width: 326px;
     height: 168px;
 }
@@ -137,7 +137,11 @@ img {
 }
 
 .info__description {
-    margin: 16px 0 22px 0;
+    margin: 11px 0 23px 0;
+}
+
+.info__performance {
+    margin: -6px 0 0 0;
 }
 
 .info__description,
@@ -151,7 +155,8 @@ img {
 
 /*---------------------------------options-block----------------------------*/
 .options {
-    margin: 26px 26px 26px 63px;
+    margin: 28px -1px 0 -1px;
+    width: 139px;
 }
 
 .options__in-stock,
@@ -161,7 +166,7 @@ img {
 
 .options__in-stock {
     font-size: 8px;
-    margin: 0 15px 0 0;
+    margin: -6px 15px -7px 0;
     text-transform: uppercase;
 }
 
@@ -184,7 +189,7 @@ img {
     line-height: 15px;
     color: #777777;
     text-decoration: line-through;
-    margin: 8px 0 0 0;
+    margin: 3px 0 -1px 0;
 }
 
 .options__quantity {
@@ -198,7 +203,7 @@ img {
     border: 1px solid #f0f0f1;
     font-size: 9px;
     line-height: 15px;
-    margin: 15px 0 0 0;
+    margin: 13px -1px 0;
 }
 
 .options__quantity_sign {
@@ -225,7 +230,7 @@ img {
     font-size: 9px;
     line-height: 15px;
     text-transform: uppercase;
-    margin: 2px 0 11px 0;
+    margin: 1px 0 11px 0;
 }
 
 .options__buy-button_active {
@@ -238,15 +243,13 @@ img {
     color: #777777;
     font-size: 9px;
     line-height: 15px;
+    word-wrap: break-spaces;
+    margin: -1px 0 0 -1px;
 }
 
 .options__product-feature_logo {
-    margin-right: 4px;
+    margin: 0 4px 0 0;
 }
-
-
-
-
 
 
 
