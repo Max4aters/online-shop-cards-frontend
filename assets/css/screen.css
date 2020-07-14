@@ -23,12 +23,25 @@ img {
     max-width: 100%;
 }
 
+/*==============================catalog-module=================================*/
+
 /*------------------------------card-block--------------------------------------*/
 .card {
     background-color: white;
     display: flex;
     outline: 1px solid #f5f6f9;
     width: 720px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        outline: none;
+        padding: 36px 33px 72px 52px;
+        box-sizing: border-box;
+        width: 480px;
+    }
 }
 
 /*------------------------------picture-block-----------------------------------*/
@@ -50,6 +63,20 @@ img {
 .picture__tags-footer {
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 480px) {
+    .picture {
+        flex: none;
+        height: 377px;
+        width: 378px;
+        margin: 0;
+    }
+
+    .picture__tags-container {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /*---------------------------tag-block--------------------------------*/
@@ -94,6 +121,31 @@ img {
     width: 30px;
 }
 
+@media (max-width: 480px) {
+    .tag {
+        line-height: 15px;
+        font-size: 12px;
+        height: 26px;
+        padding: 5px 8px;
+    }
+
+    .tag_purple {
+        width: 99px;
+    }
+
+    .tag_green {
+        width: 72px;
+    }
+
+    .tag_yellow {
+        width: 57px;
+    }
+
+    .tag_red {
+        width: 38px;
+    }
+}
+
 /*-----------------------------info-block------------------------------------*/
 .info {
     height: 168px;
@@ -132,6 +184,30 @@ img {
 
 .info__performance_block_dash {
     margin: 0 5px;
+}
+
+@media (max-width: 480px) {
+    .info {
+        margin: 0;
+        width: 100%;
+    }
+
+    .info__name {
+        font-size: 16px;
+    }
+
+    .info > div,
+    .info > aside {
+        font-size: 13px;
+    }
+
+    .info > div {
+        line-height: 19px;
+    }
+
+    .info > aside {
+        line-height: 21px;
+    }
 }
 
 /*---------------------------------options-block----------------------------*/
@@ -232,4 +308,57 @@ img {
 
 .options__product-feature_logo {
     margin: 0 4px 0 0;
+}
+
+@media (max-width: 480px) {
+    .options {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .options__actions {
+        width: 193px;
+        height: 140px;
+    }
+
+    .options__in-stock {
+        font-size: 11px;
+    }
+
+    .options__price {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .options__quantity {
+        width: 193px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .options__buy-button {
+        width: 193px;
+        height: 36px;
+        font-size: 12px;
+    }
+
+    .options__product-feature_logo {
+        width: 17px;
+        height: 17px;
+        flex: none;
+        margin: 0 8px 0 0;
+    }
+
+    .options__product-feature {
+        font-size: 12px;
+        white-space: nowrap;
+        position: absolute;
+        right: 37px;
+    }
+
+
+
+
 }
