@@ -1,6 +1,7 @@
 /*===============================common styles==============================*/
 body {
     font-family: 'Montserrat', 'Geneva', sans-serif;
+    font-size: 16px;
 }
 
 button,
@@ -12,6 +13,7 @@ button:focus {
 a:link,
 a:visited,
 a:active {
+    color: #333333;
     text-decoration: none;
 }
 
@@ -23,11 +25,20 @@ img {
     max-width: 100%;
 }
 
+input[type=text] {
+    background: inherit;
+    border: none;
+    outline: none;
+    width: 100%;
+    font: inherit;
+    text-align: center;
+}
+
 /*==============================catalog-module=================================*/
 
 /*------------------------------card-block--------------------------------------*/
 .card {
-    background-color: white;
+    background: white;
     display: flex;
     outline: 1px solid #f5f6f9;
     width: 720px;
@@ -45,7 +56,7 @@ img {
 }
 
 /*------------------------------picture-block-----------------------------------*/
-.picture {
+.card__picture {
     flex: none;
     height: 115px;
     left: 0;
@@ -54,26 +65,31 @@ img {
     width: 116px;
 }
 
-.picture__tags-container {
+.card__tags-container {
     margin: -1px 0 0 0;
     position: absolute;
     z-index: 146;
 }
 
-.picture__tags-footer {
+.card__tags-footer {
     display: flex;
     flex-direction: row;
 }
 
+.card__img {
+    height: auto;
+    width: 100%;
+}
+
 @media (max-width: 480px) {
-    .picture {
+    .card__picture {
         flex: none;
         height: 377px;
         margin: 0 0 32px 0;
         width: 378px;
     }
 
-    .picture__tags-container {
+    .card__tags-container {
         display: flex;
         flex-direction: row;
     }
@@ -81,7 +97,7 @@ img {
 
 /*---------------------------tag-block--------------------------------*/
 
-.tag {
+.card__tag {
     border-radius: 2px;
     box-sizing: border-box;
     font-size: 9px;
@@ -91,38 +107,38 @@ img {
     padding: 2px 7px 4px 6px;
 }
 
-.tag_green,
-.tag_purple,
-.tag_red {
+.tag_new,
+.tag_recommend,
+.tag_hit {
     color: white;
 }
 
-.tag_yellow {
+.tag_discount {
     color: black;
 }
 
-.tag_green {
-    background-color: #62c34b;
+.tag_new {
+    background: #62c34b;
     width: 55px;
 }
 
-.tag_purple {
-    background-color: #7558cd;
+.tag_recommend {
+    background: #7558cd;
     width: 75px;
 }
 
-.tag_yellow {
-    background-color: #f7d33b;
+.tag_discount {
+    background: #f7d33b;
     width: 42px;
 }
 
-.tag_red {
-    background-color: #e74650;
+.tag_hit {
+    background: #e74650;
     width: 30px;
 }
 
 @media (max-width: 480px) {
-    .tag {
+    .card__tag {
         font-size: 12px;
         height: 26px;
         line-height: 15px;
@@ -130,124 +146,129 @@ img {
         padding: 5px 8px;
     }
 
-    .tag_purple {
+    .tag_recommend {
         width: 99px;
     }
 
-    .tag_green {
+    .tag_new {
         width: 72px;
     }
 
-    .tag_yellow {
+    .tag_discount {
         width: 57px;
     }
 
-    .tag_red {
+    .tag_hit {
         width: 38px;
     }
 }
 
 /*-----------------------------info-block------------------------------------*/
-.info {
+.card__info {
     height: 168px;
     margin: 24px 63px -11px 26px;
     width: 326px;
 }
 
-.info__name,
-.info__performance_block_dash,
-.info__performance_block_right {
+.card__name,
+.card__performance_value {
     color: #333333;
 }
 
-.info__name {
+.card__name {
     font-size: 12px;
 }
 
-.info > div,
-.info > aside {
+.card__performance,
+.card__description {
     font-size: 10px;
     line-height: 15px;
 }
 
-.info__description {
+.card__description {
     margin: 11px 0 23px 0;
 }
 
-.info__performance {
+.card__performance {
     margin: -6px 0 0 0;
 }
 
-.info__description,
-.info__performance_block_left {
+.card__performance_type,
+.card__performance_value {
+    display: inline;
+}
+
+.card__description,
+.card__performance_type {
     color: #777777;
 }
 
-.info__performance_block_dash {
+.card__performance_value::before {
     margin: 0 5px;
+    content: "—";
 }
 
 @media (max-width: 480px) {
-    .info {
+    .card__info {
         margin: 0;
         width: 100%;
     }
 
-    .info__name {
+    .card__name {
         font-size: 16px;
     }
 
-    .info__description {
+    .card__description {
         margin: 21px 0 23px 0;
     }
 
-    .info > div,
-    .info > aside {
+    .card__info > div,
+    .card__info > aside {
         font-size: 13px;
     }
 
-    .info > div {
+    .card__info > div {
         line-height: 19px;
     }
 
-    .info > aside {
+    .card__info > aside {
         line-height: 21px;
     }
 }
 
 /*---------------------------------options-block----------------------------*/
-.options {
+.card__options {
     margin: 28px -1px 21px -1px;
     width: 139px;
 }
 
-.options__in-stock,
-.options__price {
+.in-stock-status,
+.card__price {
     line-height: 15px;
 }
 
-.options__in-stock {
+.in-stock-status {
     font-size: 8px;
     margin: -6px 15px -8px 0;
     text-transform: uppercase;
 }
 
-.expected {
+.in-stock-status--awaiting {
     color: #f28c29;
 }
 
-.available {
+.in-stock-status--available  {
     color: #5fa800;
 }
 
-.options__price {
+.card__price {
     color: #333333;
     font-size: 13px;
     font-weight: bold;
     margin: 15px 0 0 0;
 }
 
-.options__old-price {
+.card__old-price {
     color: #777777;
     font-size: 10px;
     line-height: 15px;
@@ -255,11 +276,11 @@ img {
     text-decoration: line-through;
 }
 
-.options__quantity {
+.card__quantity {
     align-items: center;
     border: 1px solid #f0f0f1;
     border-radius: 2px;
-    background-color: #f8f9fb;
+    background: #f8f9fb;
     display: flex;
     font-size: 9px;
     height: 26px;
@@ -269,23 +290,23 @@ img {
     width: 139px;
 }
 
-.options__quantity_sign {
+.card__quantity_sign {
     padding: 0 1px 0 0;
     stroke: #777777;
 }
 
-.options__quantity_sign_active {
+.card__quantity_sign:active {
     stroke: #2b7de0;
 }
 
-.options__quantity_changer,
-.options__quantity_changer:focus {
-    background-color: inherit;
+.card__quantity_changer,
+.card__quantity_changer:focus {
+    background: inherit;
     border: none;
 }
 
-.options__buy-button {
-    background-color: #2b7de0;
+.card__buy-button {
+    background: #2b7de0;
     border: none;
     box-sizing: border-box;
     color: white;
@@ -299,11 +320,11 @@ img {
     width: 139px;
 }
 
-.options__buy-button_active {
-    background-color: #4289e0;
+.card__buy-button:active {
+    background: #4289e0;
 }
 
-.options__product-feature {
+.product-feature {
     align-items: flex-start;
     color: #777777;
     display: flex;
@@ -312,12 +333,12 @@ img {
     overflow-wrap: break-word;
 }
 
-.options__product-feature_logo {
+.product-feature__logo {
     margin: 1px 4px 0 0;
 }
 
 @media (max-width: 480px) {
-    .options {
+    .card__options {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -325,39 +346,39 @@ img {
         margin: 49px 0 0 2px;
     }
 
-    .options__actions {
+    .card__actions {
         width: 191px;
         height: 140px;
     }
 
-    .options__in-stock {
+    .in-stock-status {
         font-size: 11px;
         margin: -9px 0 1px -2px;
     }
 
-    .options__price {
+    .card__price {
         font-size: 17px;
         font-weight: bold;
     }
 
-    .options__old-price {
+    .card__old-price {
         font-size: 13px;
         margin: 10px 0 -2px 0;
     }
 
-    .options__quantity {
+    .card__quantity {
         font-size: 13px;
         height: 34px;
         margin: 21px 0 3px -2px;
         width: 100%;
     }
 
-    .options__quantity_sign {
+    .card__quantity_sign {
         padding: 2px 2px 0 0;
         width: 19px;
     }
 
-    .options__buy-button {
+    .card__buy-button {
         font-size: 12px;
         height: 35px;
         margin: 1px 0 0 -1px;
@@ -365,14 +386,14 @@ img {
         width: 100%;
     }
 
-    .options__product-feature_logo {
+    .product-feature__logo {
         flex: none;
         height: 17px;
         margin: 0 8px 0 0;
         width: 17px;
     }
 
-    .options__product-feature {
+    .product-feature {
         font-size: 12px;
         margin: 7px 0 0 0;
         position: absolute;
