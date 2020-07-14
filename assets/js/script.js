@@ -9,13 +9,15 @@ document.querySelectorAll('.options__quantity_changer').forEach(quantityChangerB
     }
 })
 
-let buyButton = document.querySelector('.options__buy-button');
-buyButton.onmousedown = () => {
-    buyButton.classList.toggle('options__buy-button_active');
-}
-buyButton.onmouseup = () => {
-    buyButton.classList.toggle('options__buy-button_active');
-}
+let buyButtons = document.querySelectorAll('.options__buy-button');
+buyButtons.forEach(button => {
+    button.onmousedown = () => {
+        button.classList.toggle('options__buy-button_active');
+    }
+    button.onmouseup = () => {
+        button.classList.toggle('options__buy-button_active');
+    }
+})
 
 let minusButtons = document.getElementsByClassName('minus');
 for (let i = 0; i < minusButtons.length; i++) {

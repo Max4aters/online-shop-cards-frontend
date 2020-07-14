@@ -208,6 +208,7 @@ img {
 
 .options__quantity_sign {
     stroke: #777777;
+    padding: 0 1px 0 0;
 }
 
 .options__quantity_sign_active {
