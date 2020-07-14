@@ -38,7 +38,7 @@ img {
         display: flex;
         flex-direction: column;
         outline: none;
-        padding: 36px 33px 72px 52px;
+        padding: 36px 33px 30px 52px;
         box-sizing: border-box;
         width: 480px;
     }
@@ -70,7 +70,7 @@ img {
         flex: none;
         height: 377px;
         width: 378px;
-        margin: 0;
+        margin: 0 0 32px 0;
     }
 
     .picture__tags-container {
@@ -127,6 +127,7 @@ img {
         font-size: 12px;
         height: 26px;
         padding: 5px 8px;
+        margin: 1px 3px 0 0;
     }
 
     .tag_purple {
@@ -194,6 +195,10 @@ img {
 
     .info__name {
         font-size: 16px;
+    }
+
+    .info__description {
+        margin: 21px 0 27px 0;
     }
 
     .info > div,
@@ -316,15 +321,17 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 49px 0 0 2px;
     }
 
     .options__actions {
-        width: 193px;
+        width: 191px;
         height: 140px;
     }
 
     .options__in-stock {
         font-size: 11px;
+        margin: -8px 0 0 -2px;
     }
 
     .options__price {
@@ -332,16 +339,23 @@ img {
         font-weight: bold;
     }
 
-    .options__quantity {
-        width: 193px;
-        height: 35px;
+    .options__old-price {
         font-size: 13px;
+        margin: 7px 0 0 0;
+    }
+
+    .options__quantity {
+        width: 100%;
+        height: 34px;
+        font-size: 13px;
+        margin: 22px 0 3px -2px;
     }
 
     .options__buy-button {
-        width: 193px;
-        height: 36px;
+        width: 100%;
+        height: 35px;
         font-size: 12px;
+        margin: 1px 0 0 -1px;
     }
 
     .options__product-feature_logo {
@@ -355,10 +369,7 @@ img {
         font-size: 12px;
         white-space: nowrap;
         position: absolute;
-        right: 37px;
+        right: 20px;
+        margin: 7px 0 0 0;
     }
-
-
-
-
 }
