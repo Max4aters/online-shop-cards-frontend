@@ -49,6 +49,8 @@ img {
 .card {
     display: flex;
     background-color: white;
+    width: 720px;
+    outline: 1px solid #f5f6f9;
 }
 
 /*------------------------------picture-block-----------------------------------*/
@@ -155,7 +157,7 @@ img {
 
 /*---------------------------------options-block----------------------------*/
 .options {
-    margin: 28px -1px 0 -1px;
+    margin: 28px -1px 21px -1px;
     width: 139px;
 }
 
