@@ -3,26 +3,10 @@ body {
     font-family: 'Montserrat', 'Geneva', sans-serif;
 }
 
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-p {
-
-}
-
 button,
 button:focus {
-    outline: none;
     cursor: pointer;
+    outline: none;
 }
 
 a:link,
@@ -39,34 +23,28 @@ img {
     max-width: 100%;
 }
 
-/*===============================some-module==============================*/
-
-
-
-
-
 /*------------------------------card-block--------------------------------------*/
 .card {
-    display: flex;
     background-color: white;
-    width: 720px;
+    display: flex;
     outline: 1px solid #f5f6f9;
+    width: 720px;
 }
 
 /*------------------------------picture-block-----------------------------------*/
 .picture {
+    flex: none;
+    height: 115px;
     left: 0;
+    margin: 26px -1px 40px 26px;
     top: 0;
     width: 116px;
-    height: 115px;
-    flex: none;
-    margin: 26px 0 40px 26px;
 }
 
 .picture__tags-container {
+    margin: -1px 0 0 0;
     position: absolute;
     z-index: 146;
-    margin: -1px 0 0 0;
 }
 
 .picture__tags-footer {
@@ -77,11 +55,11 @@ img {
 /*---------------------------tag-block--------------------------------*/
 
 .tag {
+    border-radius: 2px;
     box-sizing: border-box;
     font-size: 9px;
-    line-height: 15px;
-    border-radius: 2px;
     height: 19px;
+    line-height: 15px;
     margin: 0 2px 2px 0;
     padding: 2px 7px 4px 6px;
 }
@@ -97,30 +75,30 @@ img {
 }
 
 .tag_green {
-    width: 55px;
     background-color: #62c34b;
+    width: 55px;
 }
 
 .tag_purple {
-    width: 75px;
     background-color: #7558cd;
+    width: 75px;
 }
 
 .tag_yellow {
-    width: 42px;
     background-color: #f7d33b;
+    width: 42px;
 }
 
 .tag_red {
-    width: 30px;
     background-color: #e74650;
+    width: 30px;
 }
 
 /*-----------------------------info-block------------------------------------*/
 .info {
+    height: 168px;
     margin: 23px 63px -11px 26px;
     width: 326px;
-    height: 168px;
 }
 
 .info__name,
@@ -133,7 +111,8 @@ img {
     font-size: 12px;
 }
 
-.info > div {
+.info > div,
+.info > aside {
     font-size: 10px;
     line-height: 15px;
 }
@@ -168,7 +147,7 @@ img {
 
 .options__in-stock {
     font-size: 8px;
-    margin: -6px 15px -7px 0;
+    margin: -6px 15px -8px 0;
     text-transform: uppercase;
 }
 
@@ -181,36 +160,36 @@ img {
 }
 
 .options__price {
-    font-size: 13px;
     color: #333333;
+    font-size: 13px;
     margin: 15px 0 0 0;
 }
 
 .options__old-price {
+    color: #777777;
     font-size: 10px;
     line-height: 15px;
-    color: #777777;
+    margin: 3px 0 0 0;
     text-decoration: line-through;
-    margin: 3px 0 -1px 0;
 }
 
 .options__quantity {
+    align-items: center;
+    border: 1px solid #f0f0f1;
+    border-radius: 2px;
     background-color: #f8f9fb;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 26px;
-    width: 139px;
-    border-radius: 2px;
-    border: 1px solid #f0f0f1;
     font-size: 9px;
+    height: 26px;
+    justify-content: space-between;
     line-height: 15px;
     margin: 13px -1px 0;
+    width: 139px;
 }
 
 .options__quantity_sign {
-    stroke: #777777;
     padding: 0 1px 0 0;
+    stroke: #777777;
 }
 
 .options__quantity_sign_active {
@@ -219,47 +198,38 @@ img {
 
 .options__quantity_changer,
 .options__quantity_changer:focus {
-    border: none;
     background-color: inherit;
+    border: none;
 }
 
 .options__buy-button {
-    background-color: #4289e0;
-    color: white;
-    outline: none;
+    background-color: #2b7de0;
     border: none;
-    width: 139px;
-    height: 26px;
-    font-size: 10px;
-    line-height: 15px;
-    text-transform: uppercase;
-    margin: 1px 0 11px 0;
     box-sizing: border-box;
+    color: white;
+    font-size: 10px;
+    height: 26px;
+    line-height: 15px;
+    margin: 1px 0 11px 0;
+    outline: none;
+    text-transform: uppercase;
+    width: 139px;
 }
 
 .options__buy-button_active {
-    background-color: #2b7de0;
+    background-color: #4289e0;
 }
 
 .options__product-feature {
-    display: flex;
     align-items: flex-start;
     color: #777777;
+    display: flex;
     font-size: 9px;
     line-height: 15px;
-    word-wrap: break-spaces;
-    margin: -1px 0 0 -1px;
+    margin: -1px 0 0 0;
+    overflow-wrap: break-word;
 }
 
 .options__product-feature_logo {
     margin: 0 4px 0 0;
 }
-
-
-
-
-/*------------------------------next-block-----------------------------------*/
-
-/*===============================some-module==============================*/
-/*------------------------------some-block-----------------------------------*/
-/*------------------------------next-block-----------------------------------*/

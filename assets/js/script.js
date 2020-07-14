@@ -1,4 +1,4 @@
-// svg (- и +) помещены в кнопку, благодаря чему область клика увеличивается. ни грамма js-кода в HTML!
+// svg (- и +) помещены в кнопку, благодаря чему область клика увеличивается
 document.querySelectorAll('.options__quantity_changer').forEach(quantityChangerBtn => {
     let signSvg = quantityChangerBtn.children[0];
     quantityChangerBtn.onmousedown = () => {
