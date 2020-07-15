@@ -1,18 +1,27 @@
-document.querySelectorAll('.card__quantity_changer').forEach(button => {
-    button.onclick = () => {
-        let parent = button.parentElement; // <div class="card__quantity">
-        let span = parent.children[1]; // <span class="card__value-to-buy">
-        let input = span.children[0]; // <input type="text" name="product_quantity">
-        let sign = button.classList[1];
-        switch (sign) {
-            case 'minus':
-                if (input.value > 1) {
-                    --input.value;
-                }
-                break;
-            case 'plus':
-                ++input.value;
-                break;
+window.onload = () => {
+    document.querySelectorAll('.quantity__changer').forEach(button => {
+        button.onclick = () => {
+            let parent = button.parentElement; // <div class="quantity">
+            let span = parent.children[1]; // <span class="quantity__value-to-buy-container">
+            let input = span.children[0]; // <input class="card__value-to-buy" type="text" name="quantity">
+            let sign = button.dataset.sign;
+            switch (sign) {
+                case 'minus':
+                    if (input.value > 1) {
+                        --input.value;
+                    }
+                    break;
+                case 'plus':
+                    ++input.value;
+                    break;
+            }
         }
-    }
-})
+    })
+    document.querySelectorAll('.card__value-to-buy').forEach(input => {
+        input.onblur = () => {
+            if (parseInt(input.value) < 1 || !input.value) {
+                input.value = 1;
+            }
+        }
+    })
+}
