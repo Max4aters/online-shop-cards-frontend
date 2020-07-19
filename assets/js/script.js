@@ -3,7 +3,7 @@ window.onload = () => {
         button.onclick = () => {
             let parent = button.parentElement; // <div class="quantity">
             let span = parent.children[1]; // <span class="quantity__value-to-buy-container">
-            let input = span.children[0]; // <input class="card__value-to-buy" type="text" name="quantity">
+            let input = span.children[0]; // <input class="quantity__value-to-buy" type="text" name="quantity">
             let sign = button.dataset.sign;
             switch (sign) {
                 case 'minus':
@@ -17,7 +17,7 @@ window.onload = () => {
             }
         }
     })
-    document.querySelectorAll('.card__value-to-buy').forEach(input => {
+    document.querySelectorAll('.quantity__value-to-buy').forEach(input => {
         input.onblur = () => {
             if (parseInt(input.value) < 1 || !input.value) {
                 input.value = 1;

@@ -14,16 +14,14 @@
         <li class="catalog-list__item">
             <article class="card">
                 <section class="card__picture">
-                    <div class="tags-container">
-                        <ul class="tags-list">
-                            <li class="tags-list__item">
-                                <div class="card__tag tag-feature tag-feature--recommend">Мы советуем</div>
-                            </li>
-                            <li class="tags-list__item">
-                                <div class="card__tag tag-feature tag-feature--new">Новинка</div>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="tags-list">
+                        <li class="tags-list__item">
+                            <div class="card__tag tag-feature tag-feature--recommend">Мы советуем</div>
+                        </li>
+                        <li class="tags-list__item">
+                            <div class="card__tag tag-feature tag-feature--new">Новинка</div>
+                        </li>
+                    </ul>
                     <a href="#">
                         <img class="card__img" src="images/content/backen_ponevira.jpg"
                              alt="Backen Ponevira">
@@ -35,20 +33,20 @@
                         мощность и
                         комфорт, динамику и экономичность, бизнес и поездки с семьей.
                     </div>
-                    <dl class="car-performance">
-                        <div class="car-performance__block">
+                    <div class="car-performance">
+                        <dl class="car-performance__block">
                             <dt class="car-performance__type">Мощность, л.с.</dt>
                             <dd class="car-performance__value">440</dd>
-                        </div>
-                        <div class="car-performance__block">
+                        </dl>
+                        <dl class="car-performance__block">
                             <dt class="car-performance__type">Объем двигателя, куб. см.</dt>
                             <dd class="car-performance__value">2894</dd>
-                        </div>
-                        <div class="car-performance__block">
+                        </dl>
+                        <dl class="car-performance__block">
                             <dt class="car-performance__type">Разгон до 100 км/ч,</dt>
                             <dd class="car-performance__value">4.4</dd>
-                        </div>
-                    </dl>
+                        </dl>
+                    </div>
                 </section>
                 <section class="card__options">
                     <div class="card__actions">
@@ -58,7 +56,7 @@
                             <input name="id" value="1" hidden>
                             <div class="quantity">
                                 <button class="quantity__changer" data-sign="minus" type="button">
-                                    <svg class="quantity__sign" width="12" height="12"
+                                    <svg class="quantity__sign"
                                          xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 0 24 24" fill="none"
                                          stroke="#5194e5" stroke-width="2" stroke-linecap="round"
@@ -67,10 +65,11 @@
                                     </svg>
                                 </button>
                                 <span class="quantity__value-to-buy-container">
-                                    <input class="card__value-to-buy" type="text" name="quantity" value="1">
+                                    <input class="quantity__value-to-buy" type="text" name="quantity"
+                                           pattern="[1-9][0-9]*" value="1">
                                 </span>
                                 <button class="quantity__changer" data-sign="plus" type="button">
-                                    <svg class="quantity__sign" width="12" height="12"
+                                    <svg class="quantity__sign"
                                          xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 0 24 24" fill="none"
                                          stroke="#5194e5" stroke-width="2" stroke-linecap="round"
@@ -84,7 +83,7 @@
                         </form>
                     </div>
                     <div class="more-info">
-                        <svg class="more-info__logo" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                        <svg class="more-info__logo" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 24 24" fill="none"
                              stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
@@ -99,22 +98,20 @@
         <li class="catalog-list__item">
             <article class="card">
                 <section class="card__picture">
-                    <div class="tags-container">
-                        <ul class="tags-list">
-                            <li class="tags-list_item">
-                                <div class="card__tag tag-feature tag-feature--discount">Акция</div>
-                            </li>
-                            <li class="tags-list_item">
-                                <div class="card__tag tag-feature tag-feature--recommend">Мы советуем</div>
-                            </li>
-                            <li class="tags-list_item">
-                                <div class="card__tag tag-feature tag-feature--new">Новинка</div>
-                            </li>
-                            <li class="tags-list_item">
-                                <div class="card__tag tag-feature tag-feature--hit">Хит</div>
-                            </li>
-                        </ul>
-                    </div>
+                    <ul class="tags-list">
+                        <li class="tags-list_item">
+                            <div class="card__tag tag-feature tag-feature--discount">Акция</div>
+                        </li>
+                        <li class="tags-list_item">
+                            <div class="card__tag tag-feature tag-feature--recommend">Мы советуем</div>
+                        </li>
+                        <li class="tags-list_item">
+                            <div class="card__tag tag-feature tag-feature--new">Новинка</div>
+                        </li>
+                        <li class="tags-list_item">
+                            <div class="card__tag tag-feature tag-feature--hit">Хит</div>
+                        </li>
+                    </ul>
                     <img src="images/content/backen_mocen.jpg" alt="Backen Mocen">
                 </section>
                 <section class="card__info">
@@ -123,20 +120,20 @@
                         эффектный
                         вид, полный привод, возвышенная посадка и мощный двигатель.
                     </div>
-                    <dl class="car-performance">
-                        <div class="car-performance__block">
+                    <div class="car-performance">
+                        <dl class="car-performance__block">
                             <dt class="car-performance__type">Мощность, л.с.</dt>
                             <dd class="car-performance__value">360</dd>
-                        </div>
-                        <div class="car-performance__block">
+                        </dl>
+                        <dl class="car-performance__block">
                             <dt class="car-performance__type">Объем двигателя, куб. см.</dt>
                             <dd class="car-performance__value">2997</dd>
-                        </div>
-                        <div class="car-performance__block">
+                        </dl>
+                        <dl class="car-performance__block">
                             <dt class="car-performance__type">Разгон до 100 км/ч,</dt>
                             <dd class="car-performance__value">5.2</dd>
-                        </div>
-                    </dl>
+                        </dl>
+                    </div>
                 </section>
                 <section class="card__options">
                     <div class="card__actions">
@@ -147,7 +144,7 @@
                             <input hidden name="id" value="2">
                             <div class="quantity">
                                 <button class="quantity__changer" data-sign="minus" type="button">
-                                    <svg class="quantity__sign" width="12" height="12"
+                                    <svg class="quantity__sign"
                                          xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 0 24 24" fill="none"
                                          stroke="#5194e5" stroke-width="2" stroke-linecap="round"
@@ -156,10 +153,11 @@
                                     </svg>
                                 </button>
                                 <span class="quantity__value-to-buy-container">
-                                    <input class="card__value-to-buy" type="text" name="quantity" pattern="[1-9][0-9]*" value="1">
+                                    <input class="quantity__value-to-buy" type="text" name="quantity"
+                                           pattern="[1-9][0-9]*" value="1">
                                 </span>
                                 <button class="quantity__changer plus" data-sign="plus" type="button">
-                                    <svg class="quantity__sign" width="12" height="12"
+                                    <svg class="quantity__sign"
                                          xmlns="http://www.w3.org/2000/svg"
                                          viewBox="0 0 24 24" fill="none"
                                          stroke="#5194e5" stroke-width="2" stroke-linecap="round"
@@ -173,7 +171,7 @@
                         </form>
                     </div>
                     <div class="more-info">
-                        <svg class="more-info__logo" xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                        <svg class="more-info__logo" xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 24 24" fill="none"
                              stroke="#777777" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>

@@ -49,22 +49,20 @@ input[type=text] {
     background: white;
     display: flex;
     outline: 1px solid #f5f6f9;
-    width: 720px;
+}
+
+/* все карточки приподняты на пиксель, чтобы рамки находили друг на друга */
+
+.catalog-list__item {
+    margin: 1px 0 0 0;
 }
 
 .card__picture {
     flex: none;
     height: 115px;
     left: 0;
-    margin: 26px -1px 40px 26px;
+    margin: 24px 0 40px 26px;
     top: 0;
-    width: 116px;
-}
-
-.tags-container {
-    margin: -1px 0 0 0;
-    position: absolute;
-    z-index: 146;
     width: 116px;
 }
 
@@ -74,18 +72,12 @@ input[type=text] {
 }
 
 .card__tag {
-    border-radius: 2px;
-    box-sizing: border-box;
-    font-size: 9px;
-    height: 19px;
-    line-height: 15px;
     margin: 0 2px 2px 0;
     padding: 2px 7px 4px 6px;
 }
 
 .card__info {
-    height: 168px;
-    margin: 24px 63px -11px 26px;
+    margin: 23px 61px 0 25px;
     width: 326px;
 }
 
@@ -105,11 +97,7 @@ input[type=text] {
 }
 
 .card__description {
-    margin: 11px 0 23px 0;
-}
-
-.car-performance {
-    margin: -6px 0 0 0;
+    margin: 11px 0 15px 0;
 }
 
 .car-performance__type,
@@ -128,20 +116,16 @@ input[type=text] {
 }
 
 .card__options {
-    margin: 28px -1px 21px -1px;
+    margin: 21px 0 21px 0;
     width: 139px;
 }
-
-.price {
-    line-height: 15px;
-}
-
 
 .price {
     color: #333333;
     font-size: 13px;
     font-weight: bold;
-    margin: 15px 0 0 0;
+    margin: 7px 0 0 0;
+    line-height: 15px;
 }
 
 .price-old {
@@ -162,13 +146,15 @@ input[type=text] {
     height: 26px;
     justify-content: space-between;
     line-height: 15px;
-    margin: 13px -1px 0;
+    margin: 13px 0 0 0;
     width: 139px;
 }
 
 .quantity__sign {
     padding: 0 1px 0 0;
     stroke: #777777;
+    width: 12px;
+    height: 12px;
 }
 
 .quantity__sign:active {
@@ -181,10 +167,6 @@ input[type=text] {
     border: none;
 }
 
-.card__value-to-buy {
-    margin: 0 0 0 -1px;
-}
-
 .card__buy-button {
     background: #2b7de0;
     border: none;
@@ -193,7 +175,7 @@ input[type=text] {
     font-size: 10px;
     height: 26px;
     line-height: 15px;
-    margin: 1px 0 10px 0;
+    margin: 1px 0 10px 1px;
     outline: none;
     padding: 2px 0 0 0;
     text-transform: uppercase;
@@ -210,26 +192,18 @@ input[type=text] {
         display: flex;
         flex-direction: column;
         outline: none;
-        padding: 36px 33px 29px 52px;
+        padding: 34px 33px 39px 52px;
         width: 480px;
     }
 
     .card__picture {
         flex: none;
         height: 377px;
-        margin: 0 0 32px 0;
+        margin: 0 0 33px 0;
         width: 378px;
     }
 
-    .tags-container {
-        display: flex;
-        flex-direction: row;
-    }
-
     .card__tag {
-        font-size: 12px;
-        height: 26px;
-        line-height: 15px;
         margin: 1px 4px 0 0;
         padding: 5px 8px;
     }
@@ -244,7 +218,7 @@ input[type=text] {
     }
 
     .card__description {
-        margin: 21px 0 23px 0;
+        margin: 19px 0 20px 0;
     }
 
     .car-performance,
@@ -263,14 +237,18 @@ input[type=text] {
 
 /*-------------------------------tag-block---------------------------------*/
 
+.tag-feature {
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 9px;
+    height: 19px;
+    line-height: 15px;
+}
+
 .tag-feature--new,
 .tag-feature--recommend,
 .tag-feature--hit {
     color: white;
-}
-
-.tag-feature--discount {
-    color: black;
 }
 
 .tag-feature--new {
@@ -286,6 +264,7 @@ input[type=text] {
 }
 
 .tag-feature--discount {
+    color: black;
     background: #f7d33b;
     width: 42px;
     flex-basis: 42px;
@@ -300,6 +279,10 @@ input[type=text] {
 .tags-list {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 0 0 0;
+    position: absolute;
+    z-index: 146;
+    width: 116px;
 }
 
 .tags-list__item {
@@ -307,6 +290,12 @@ input[type=text] {
 }
 
 @media (max-width: 480px) {
+    .tag-feature {
+        font-size: 12px;
+        height: 26px;
+        line-height: 15px;
+    }
+
     .tag-feature--recommend {
         width: 99px;
     }
@@ -324,6 +313,8 @@ input[type=text] {
     }
 
     .tags-list {
+        display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
     }
 }
@@ -332,11 +323,8 @@ input[type=text] {
 
 .in-stock-status {
     line-height: 15px;
-}
-
-.in-stock-status {
     font-size: 8px;
-    margin: -6px 15px -8px 0;
+    margin: 0 15px 0 0;
     text-transform: uppercase;
 }
 
@@ -357,10 +345,13 @@ input[type=text] {
     font-size: 9px;
     line-height: 15px;
     overflow-wrap: break-word;
+    margin: 0 0 0 1px;
 }
 
 .more-info__logo {
     margin: 1px 4px 0 0;
+    width: 13px;
+    height: 13px;
 }
 
 @media (max-width: 480px) {
@@ -369,7 +360,7 @@ input[type=text] {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 49px 0 0 2px;
+        margin: 32px 0 0 2px;
     }
 
     .card__actions {
@@ -379,12 +370,13 @@ input[type=text] {
 
     .in-stock-status {
         font-size: 11px;
-        margin: -9px 0 1px -2px;
+        margin: 0 0 0 -2px;
     }
 
     .price {
         font-size: 17px;
         font-weight: bold;
+        margin: 16px 0 0 0;
     }
 
     .price-old {
@@ -421,7 +413,7 @@ input[type=text] {
 
     .more-info {
         font-size: 12px;
-        margin: 7px 0 0 0;
+        margin: 17px 0 0 0;
         position: absolute;
         right: 36px;
         white-space: nowrap;
