@@ -34,6 +34,12 @@ input[type=text] {
     text-align: center;
 }
 
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
 /*==============================catalog=================================*/
 
 /*------------------------------card--------------------------------------*/
@@ -58,7 +64,7 @@ input[type=text] {
 }
 
 .card__info {
-    margin: 23px 61px 0 25px;
+    margin: 23px 61px 21px 25px;
     width: 326px;
 }
 

@@ -20,7 +20,15 @@ window.onload = () => {
     document.querySelectorAll('.quantity__value').forEach(input => {
         input.onblur = () => {
             let inputStr = input.value.replace(/[^\d]/g, '');
-            inputStr === '' ? input.value = 1 : input.value = inputStr;
+            if (inputStr !== '') {
+                let number = parseInt(inputStr, 10);
+                if (!isNaN(number)) {
+                    input.value = number;
+                }
+            }
+            else {
+                input.value = 1;
+            }
         }
     })
 }
