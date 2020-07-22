@@ -2,8 +2,8 @@ window.onload = () => {
     document.querySelectorAll('.quantity__changer').forEach(button => {
         button.onclick = () => {
             let parent = button.parentElement; // <div class="quantity">
-            let span = parent.children[1]; // <span class="quantity__value-to-buy-container">
-            let input = span.children[0]; // <input class="quantity__value-to-buy" type="text" name="quantity">
+            let span = parent.children[1]; // <span class="quantity__value-container">
+            let input = span.children[0]; // <input class="quantity__value" type="text" name="quantity">
             let sign = button.dataset.sign;
             switch (sign) {
                 case 'minus':
@@ -17,11 +17,10 @@ window.onload = () => {
             }
         }
     })
-    document.querySelectorAll('.quantity__value-to-buy').forEach(input => {
+    document.querySelectorAll('.quantity__value').forEach(input => {
         input.onblur = () => {
-            if (parseInt(input.value) < 1 || !input.value) {
-                input.value = 1;
-            }
+            let inputStr = input.value.replace(/[^\d]/g, '');
+            inputStr === '' ? input.value = 1 : input.value = inputStr;
         }
     })
 }
